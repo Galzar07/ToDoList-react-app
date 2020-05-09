@@ -1,0 +1,57 @@
+.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+
+.list p {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px auto;
+
+}
+
+.list div {
+    width: 200px;
+    padding: 3px;
+}
+
+.list div button {
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.list div button:hover {
+    animation: storm 0.7s ease-in-out both;
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
